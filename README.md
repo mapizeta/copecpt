@@ -21,6 +21,14 @@ Instalamos las dependencias:
 ```sh
 (env)$ pip install -r requirements.txt
 ```
+
+Creamos la estructura de nuestro modelo en la base de datos de prueba(sqlite)
+
+```sh
+python manage.py makemigrations api
+python manage.py migrate
+```
+
 Una vez `pip` ha finalizado procedemos a arrancar nuestra api-rest:
 
 ```sh
@@ -51,6 +59,5 @@ Eliminación de usuario por `uuid`
 
 #Notas
 
--Al levantar el ambiente se creará una base de datos demo en sqlite para hacer más cómodo el trabajo con el `CRUD`
--En el repositorio se comparte un `json`(copecpt.postman_collection.json)  con los endpoint para `postman`. El uuid `4b7855b9-2a98-4acb-8c65-c7fa21db1a61` está a modo de ejemplo.
-
+- Al levantar el ambiente se creará una base de datos demo en sqlite para hacer más cómodo el trabajo con el `CRUD`
+- En el repositorio se comparte un `json`(copecpt.postman_collection.json)  con los endpoint para `postman`. El uuid `4b7855b9-2a98-4acb-8c65-c7fa21db1a61` está a modo de ejemplo.
