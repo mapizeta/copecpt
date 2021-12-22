@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "cd07269d-f911-4c58-aa3b-aaf3b8995708",
+		"name": "copecpt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/user/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "demo@pyzarro.com",
+							"type": "text"
+						},
+						{
+							"key": "fecha_nac",
+							"value": "1984-01-01",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Demo1",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "Demo1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/user/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/user/detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/user/detail",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/user/detail/4b7855b9-2a98-4acb-8c65-c7fa21db1a61",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/user/detail/4b7855b9-2a98-4acb-8c65-c7fa21db1a61",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"detail",
+						"4b7855b9-2a98-4acb-8c65-c7fa21db1a61"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/user/update/4b7855b9-2a98-4acb-8c65-c7fa21db1a61/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "edeb1a52-c05b-455e-bea3-5e363a1302dc",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "nombre",
+							"value": "pezarro",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "apellido",
+							"value": "Pyzarro",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/user/update/4b7855b9-2a98-4acb-8c65-c7fa21db1a61/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"update",
+						"4b7855b9-2a98-4acb-8c65-c7fa21db1a61",
+						""
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/user/delete/4b7855b9-2a98-4acb-8c65-c7fa21db1a61/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/user/delete/4b7855b9-2a98-4acb-8c65-c7fa21db1a61/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"delete",
+						"4b7855b9-2a98-4acb-8c65-c7fa21db1a61",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
